@@ -1,0 +1,5 @@
+[
+  {"rule":"all","en":{"title":"Reconcile your bill book","when":"Monthly · last working day","note":"Check dated bills against monthly sales. This is a suggested routine."},"hi":{"title":"बिल बुक का मिलान करें","when":"मासिक · अंतिम कार्य दिवस","note":"बिलों से महीने की बिक्री जाँचें। यह एक सुझाव है।"}},
+  {"rule":"gst","en":{"title":"Review GST filing dates","when":"Each filing period","note":"Confirm your actual return type and due date on the official GST portal."},"hi":{"title":"जीएसटी दाखिल करने की तारीख जाँचें","when":"हर रिटर्न अवधि","note":"आधिकारिक जीएसटी पोर्टल पर सही तारीख और रिटर्न प्रकार की पुष्टि करें।"}},
+  {"rule":"all","en":{"title":"Check registration and renewal needs","when":"Quarterly review","note":"Review permits relevant to your business with the district office; no statutory due date is assumed."},"hi":{"title":"पंजीकरण और नवीनीकरण जाँचें","when":"हर तिमाही","note":"ज़िला कार्यालय से लागू परमिट की पुष्टि करें। यह वैधानिक अंतिम तिथि नहीं है।"}}
+]

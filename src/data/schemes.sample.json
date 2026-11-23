@@ -1,0 +1,5 @@
+[
+  {"id":"sample-01","en":"Sample A · Home manufacturing support","hi":"नमूना A · घरेलू निर्माण सहायता","category":"manufacturing","womenOnly":true,"annualLimit":5000000,"documentsNeeded":["Aadhaar / आधार","Bank proof / बैंक प्रमाण"]},
+  {"id":"sample-02","en":"Sample B · Micro-enterprise market access","hi":"नमूना B · लघु उद्यम बाज़ार सहायता","category":"manufacturing","womenOnly":false,"annualLimit":2000000,"documentsNeeded":["Product list / उत्पाद सूची","Bill book / बिल बुक"]},
+  {"id":"sample-03","en":"Sample C · Service desk support","hi":"नमूना C · सेवा उद्यम सहायता","category":"services","womenOnly":false,"annualLimit":1500000,"documentsNeeded":["Activity proof / गतिविधि प्रमाण"]}
+]

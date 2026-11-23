@@ -1,0 +1,17 @@
+{
+  "profile":{"ownerName":"Sunita","businessName":"Sunita Papad","gender":"female","activity":"Papad making / पापड़ निर्माण","category":"manufacturing","district":"Indore","location":"urban","monthlyTurnoverINR":45000,"employees":2,"yearsInBusiness":3,"hasGST":false,"hasUdyam":false,"hasBankAccount":true,"socialCategory":null,"language":"hi"},
+  "documents":[
+    {"type":"aadhaar","fields":{"aadhaarLast4":"4321"},"confidence":1,"warnings":["Fictional sample / काल्पनिक नमूना"]},
+    {"type":"bill_book","fields":{"month1INR":"40000","month2INR":"45000","month3INR":"48000"},"confidence":1,"warnings":[]},
+    {"type":"product","fields":{"products":"Urad, moong, masala papad"},"confidence":1,"warnings":[]}
+  ],
+  "loan":{
+    "en":{"explanation":"The bill book shows steady sales and the owner reports an active bank account. Registration and identity evidence are still incomplete.","improvementTips":["Gather a recent bank statement.","Check whether Udyam registration is appropriate.","Keep dated bills and PAN proof together."]},
+    "hi":{"explanation":"बिल बुक में स्थिर बिक्री है और मालिक ने बैंक खाता बताया है। पंजीकरण और पहचान के प्रमाण अभी अधूरे हैं।","improvementTips":["हाल का बैंक स्टेटमेंट जुटाएँ।","उद्यम पंजीकरण की उपयुक्तता जाँचें।","तारीख वाले बिल और पैन प्रमाण साथ रखें।"]}
+  },
+  "catalogue":[
+    {"name":"Urad Papad","nameHi":"उड़द पापड़","description":"Home-style urad dal papad / घरेलू उड़द पापड़","category":"Papad","suggestedPriceINR":70,"unit":"200 g","imageUrl":""},
+    {"name":"Moong Papad","nameHi":"मूंग पापड़","description":"Moong dal papad / मूंग दाल पापड़","category":"Papad","suggestedPriceINR":65,"unit":"200 g","imageUrl":""},
+    {"name":"Masala Papad","nameHi":"मसाला पापड़","description":"Spiced papad / मसालेदार पापड़","category":"Papad","suggestedPriceINR":75,"unit":"200 g","imageUrl":""}
+  ]
+}
