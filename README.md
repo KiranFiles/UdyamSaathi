@@ -63,5 +63,3 @@ Run `npm test` for the automated rule, masking, size-boundary and provider-contr
 | 8 · Summary | `src/lib/pdf.ts`, `src/pages/Results.tsx`, `src/store/useSession.ts` | Download the PDF; inspect masked evidence and Devanagari. Inspect the WhatsApp link, delete the session, and revisit `/results`. |
 | 9 · District view | `src/pages/DistrictDashboard.tsx` | Open `/dashboard` on mobile; compare the chart and accessible table. Neither should change when you delete a report. |
 | 10 · Demo | `src/pages/Home.tsx`, `src/data/demo/{load.ts,sunita_transcript_hi.txt,aadhaar_sample_masked.png,billbook_page.jpg,product_papad.jpg,cached_responses.json}`, `DEMO_SCRIPT.md`, `README.md` | Rehearse keyless: 90% draft, missing bank proof, 2 sample matches, 62/100 score, 3 products. |
-
-The original supplied [product brief](./README%20(3).md) is preserved for the pitch narrative and architecture.
