@@ -13,7 +13,11 @@ export const photo = z
       Buffer.byteLength(s.slice(s.indexOf(",") + 1), "base64") <= 1_000_000,
     "Image too large",
   );
-type Request = Pick<VercelRequest, "method" | "socket"> & { body: unknown };
+type Request = Pick<VercelRequest, "method"> & {
+  socket?: { remoteAddress?: string };
+  headers?: Record<string, string | string[] | undefined>;
+  body: unknown;
+};
 type Response = Pick<VercelResponse, "setHeader"> & {
   status: (n: number) => { json: (data: unknown) => unknown };
 };
@@ -28,9 +32,24 @@ export function endpoint<I, O>(
       res.setHeader("Allow", "POST");
       return res.status(405).json({ error: "POST required" });
     }
-    if (!allowed(req.socket.remoteAddress ?? "local"))
+    const forwarded = req.headers?.["x-forwarded-for"];
+    const ip =
+      (typeof forwarded === "string"
+        ? forwarded.split(",")[0].trim()
+        : Array.isArray(forwarded)
+          ? forwarded[0]
+          : req.socket?.remoteAddress) ?? "local";
+    if (!allowed(ip))
       return res.status(429).json({ error: "Try again in one minute" });
-    const parsed = input.safeParse(req.body);
+    let body = req.body;
+    if (typeof body === "string") {
+      try {
+        body = JSON.parse(body);
+      } catch {
+        /* let input.safeParse handle invalid payload */
+      }
+    }
+    const parsed = input.safeParse(body);
     if (!parsed.success)
       return res.status(400).json({ error: "Invalid request" });
     try {
